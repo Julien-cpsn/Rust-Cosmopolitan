@@ -1,0 +1,17 @@
+[unstable]
+build-std-features = [""]
+build-std = ["panic_abort", "std", "libc"]
+
+[build]
+target = "./x86_64-unknown-linux-cosmo.json"
+
+[profile.dev]
+panic = "abort"
+opt-level = "s"
+
+[profile.release]
+panic = "abort"
+opt-level = "s"
+lto = true # Enable Link Time Optimization
+codegen-units = 1 # Increase build time but increase optimisation. Default 16
+strip = true  # Automatically strip symbols from the binary
