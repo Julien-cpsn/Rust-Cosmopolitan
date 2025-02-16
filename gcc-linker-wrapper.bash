@@ -12,4 +12,4 @@ for o in "$@" ; do
     args+=("$o")
 done
 
-$COSMO/.cosmocc/3.8.0/bin/x86_64-unknown-cosmo-cc "${args[@]}"
+$COSMO/.cosmocc/current/bin/x86_64-unknown-cosmo-cc "${args[@]}"

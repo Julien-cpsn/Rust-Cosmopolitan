@@ -12,13 +12,10 @@
   "executables": true,
   "exe-suffix": ".com.dbg",
   "emit-debug-gdb-scripts": false,
-  "crt-static-default": true,
-  "crt-static-respected": false,
   "linker-is-gnu": true,
   "allows-weak-linkage":true,
   "has-rpath": false,
   "has-thread-local": false,
-  "is-builtin": false,
   "trap-unreachable": true,
   "position-independent-executables": false,
   "static-position-independent-executables": false,
@@ -31,18 +28,11 @@
   "max-atomic-width": 64,
   "linker-flavor": "gcc",
   "linker": "./gcc-linker-wrapper.bash",
-  "late-link-args": {
-    "gcc": []
-  },
   "pre-link-args": {
     "gcc": [
       "-static",
       "-pg",
       "-mnop-mcount"
-    ]
-  },
-  "post-link-args": {
-    "gcc": [
     ]
   },
   "stack-probes": {

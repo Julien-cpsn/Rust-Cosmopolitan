@@ -3,7 +3,7 @@
 
 # apelink
 MODE=
-APELINK=$COSMO/o/x86_64/tool/build/apelink
+APELINK=$COSMO/o/tool/build/apelink
 apelinkpls () {
     OUTPUT="$1"
     OUTPUT_X86_64="$2"
